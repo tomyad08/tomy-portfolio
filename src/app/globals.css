@@ -25,3 +25,12 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.corousel {
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0 24px;
+}
+
+.corousel .item {
+  scroll-snap-align: start;
+}

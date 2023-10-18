@@ -9,12 +9,15 @@ const Portfolio = () => {
   const [select, setSelect] = useState(listPort[0]);
 
   return (
-    <div className="bg-purple-800 rounded-xl p-4 xl:p-10 z-30" id="portfolio">
+    <div
+      className="bg-gradient-to-b from-purple-700 to-black p-4 xl:p-10 z-30"
+      id="portfolio"
+    >
       <h1 className="text-3xl font-semibold text-center text-white">
         My Latest Portfolio
       </h1>
       <div className="xl:flex xl:justify-center mt-7">
-        <div>
+        <div className="flex justify-center">
           <Image
             src={select.picture}
             width={550}
@@ -24,14 +27,14 @@ const Portfolio = () => {
           />
         </div>
         <div className="xl:w-96">
-          <h1 className="text-2xl py-2 xl:text-3xl font-semibold text-pink-300">
+          <h1 className="text-2xl text-center py-2 xl:text-3xl font-semibold text-pink-300">
             {select.name}
           </h1>
           <p className="text-justify py-2 text-white text-sm">
             {select.description}
           </p>
           <Link href={select.link}>
-            <button className="w-full mt-2 py-2 font-semibold bg-blue-200 rounded-lg border-white border-1 text-blue-800">
+            <button className="w-full mt-2 transition hover:delay-150 duration-300 ease-in-out hover:bg-pink-600 hover:text-white py-2 font-semibold bg-blue-200 rounded-lg border-white border-1 text-blue-800">
               Explore
             </button>
           </Link>
@@ -51,7 +54,7 @@ const Portfolio = () => {
                 width={200}
                 height={200}
                 alt={value.name}
-                className="rounded-lg w-full xl:w-200 xl:h-100 overflow-hidden xl:mb-4 cursor-pointer border border-1 border-white"
+                className="rounded-lg w-full hover:scale-105 xl:w-200 xl:h-100 overflow-hidden xl:mb-4 cursor-pointer border border-1 border-white"
               />
             </div>
           ))}
