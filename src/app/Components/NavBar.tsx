@@ -27,12 +27,12 @@ const NavBar = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
                 height="32"
-                fill="currentColor"
+                fill="white"
                 className="bi bi-list md:hidden"
                 viewBox="0 0 16 16"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
                 />
               </svg>
@@ -47,7 +47,7 @@ const NavBar = () => {
                 x
               </p>
               {ListNav.map((value) => (
-                <Link href={value.link}>
+                <Link href={value.link} key={value.id}>
                   <div
                     className="px-4 py-2 hover:bg-pink-500 text-black  rounded-lg drop-shadow-2xl hover:text-white "
                     onClick={() => setCondition(!condition)}
@@ -60,7 +60,7 @@ const NavBar = () => {
           )}
           <div className="md:flex justify-around hidden ">
             {ListNav.map((value) => (
-              <Link href={value.link}>
+              <Link href={value.link} key={value.id}>
                 <div
                   className="px-4 py-2 hover:bg-pink-500 text-black  rounded-lg drop-shadow-2xl hover:text-white "
                   onClick={() => setCondition(!condition)}

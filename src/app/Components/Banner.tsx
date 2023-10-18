@@ -40,7 +40,10 @@ const Banner = () => {
           <div className="flex justify-between">
             <div className="columns-3 xl:columns-6 w-full">
               {listSkill.map((value) => (
-                <div className="bg-blue-700 text-purple-100 p-1 mb-2 me-2 rounded-lg text-sm text-center">
+                <div
+                  className="bg-blue-700 text-purple-100 p-1 mb-2 me-2 rounded-lg text-sm text-center"
+                  key={value.id}
+                >
                   {value.name}
                 </div>
               ))}

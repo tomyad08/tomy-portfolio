@@ -91,7 +91,7 @@ const AskForm: React.FC = () => {
               onChange={handleChange}
             />
             <button
-              className="p-2 w-full bg-pink-600 rounded-lg mt-5"
+              className="p-2 w-full bg-pink-600 rounded-lg mt-5 text-white"
               type="submit"
             >
               Submit

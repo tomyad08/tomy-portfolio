@@ -10,7 +10,7 @@ const Working = () => {
       <div className="flex justify-center">
         <div className="w-full md:w-3/4">
           {listWorking.map((value) => (
-            <div>
+            <div key={value.id}>
               <h1 className="text-lg font-semibold border-b-2 border-slate-200 my-4">
                 {value.company}
               </h1>

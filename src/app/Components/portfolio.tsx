@@ -10,7 +10,7 @@ const Portfolio = () => {
 
   return (
     <div className="bg-purple-800 rounded-xl p-4 xl:p-10 z-30" id="portfolio">
-      <h1 className="text-3xl font-semibold text-center">
+      <h1 className="text-3xl font-semibold text-center text-white">
         My Latest Portfolio
       </h1>
       <div className="xl:flex xl:justify-center mt-7">
@@ -27,7 +27,9 @@ const Portfolio = () => {
           <h1 className="text-2xl py-2 xl:text-3xl font-semibold text-pink-300">
             {select.name}
           </h1>
-          <p className="text-justify py-2">{select.description}</p>
+          <p className="text-justify py-2 text-white text-sm">
+            {select.description}
+          </p>
           <Link href={select.link}>
             <button className="w-full mt-2 py-2 font-semibold bg-blue-200 rounded-lg border-white border-1 text-blue-800">
               Explore
