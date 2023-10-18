@@ -15,16 +15,16 @@ const Banner = () => {
     >
       <div className="xl:flex xl:justify-around pt-20 xl:pt-24">
         <div className="relative flex justify-center -top-1">
-          <div className="absolute top-0 xl:m-4 xl:w-52 w-full h-24 bg-purple-700 xl:h-52 xl:bg-gradient-to-b xl:from-white xl:to-purple-800 xl:rounded-full p-5 z-5"></div>
+          <div className="absolute top-0 xl:m-4 xl:w-96 w-full h-24 bg-purple-700 xl:h-96 xl:bg-slate-100 xl:opacity-30 xl:rounded-full p-5 z-5"></div>
           <div className="absolute right-10 top-4 w-10 h-10 xl:w-24 xl:h-24 bg-gradient-to-b from-slate-400 to-blue-500 rounded-full p-5 z-5"></div>
-          <div className="absolute right-24 top-24 w-14 h-14 xl:w-72 xl:h-72 bg-gradient-to-b from-slate-200 to-pink-600 rounded-full p-5 z-5"></div>
+          <div className="absolute right-24 top-24 w-14 h-14 xl:w-72 xl:h-72 bg-gradient-to-b from-slate-100 to-pink-600 rounded-full p-5 z-5"></div>
           <img
             src="/tomy.png"
             alt="photo profil"
             className={`z-10 w-2/5 xl:w-4/5 rounded-full bg-blue-100 xl:bg-transparent border-dashed border-4 border-blue-700`}
           />
         </div>
-        <div className="xl:mx-10 xl:mt-5  p-5 w-full xl:w-2/4">
+        <div className="xl:mx-10   px-5 w-full xl:w-2/4">
           <p className="text-3xl text-center xl:text-7xl font-bold text-purple-800 drop-shadow-xl">
             Tomy Adiansyah
           </p>
